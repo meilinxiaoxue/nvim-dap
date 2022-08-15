@@ -13,6 +13,8 @@ local function set_default_bufopts(buf)
     buf, "n", "a", "<Cmd>lua require('dap.ui').trigger_actions()<CR>", {})
   api.nvim_buf_set_keymap(
     buf, "n", "o", "<Cmd>lua require('dap.ui').trigger_actions()<CR>", {})
+    api.nvim_buf_set_keymap(
+    buf, "n", "q", "ZQ", {})
   api.nvim_buf_set_keymap(
     buf, "n", "<2-LeftMouse>", "<Cmd>lua require('dap.ui').trigger_actions()<CR>", {})
 end
